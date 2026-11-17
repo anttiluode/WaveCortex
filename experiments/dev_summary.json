@@ -1,0 +1,106 @@
+{
+ "n": 6,
+ "need_90pct": 6,
+ "rules": {
+  "P1_sorted": {
+   "bodies": 6,
+   "pass": true
+  },
+  "P2_chain_follows_rule": {
+   "twoform_acc": 0.8675,
+   "bayes_acc": 0.93125,
+   "pass": true
+  },
+  "P3_transfer": {
+   "twoform": 0.7596153846153846,
+   "plastic": 0.07417582417582418,
+   "bayes": 0.7692307692307692,
+   "twoform_above_plastic": 6,
+   "pass": true
+  },
+  "P4_double_dissociation": {
+   "cut_chain_acc": 0.4875,
+   "cut_fixed_link_acc": 1.0,
+   "pass": true
+  },
+  "P5_own_belief": {
+   "twoform_corr": 0.8552094828828042,
+   "pass": true
+  },
+  "P6_closer_to_ideal": {
+   "twoform_mse": 0.0908695175225957,
+   "content_mse": 0.12898178087943696,
+   "plastic_mse": 0.2441827072703162,
+   "better_than_content": 6,
+   "better_than_plastic": 6,
+   "pass": true
+  }
+ },
+ "report": {
+  "closed_content": {
+   "acc": 0.8700000000000001,
+   "mse": 0.12898178087943696,
+   "transfer": 0.7083333333333333,
+   "slope": 0.5991306862404829,
+   "shrink": 0.907256950133292,
+   "abs": 0.3529046416759395,
+   "own": 0.39654893682345727
+  },
+  "closed_regen": {
+   "acc": 0.8675,
+   "mse": 0.10726754538945649,
+   "transfer": 0.7596153846153846,
+   "slope": 0.9430999002666948,
+   "shrink": 0.9240389561894478,
+   "abs": 0.6057902501982755,
+   "own": 0.7772648335763448
+  },
+  "closed_twoform": {
+   "acc": 0.8675,
+   "mse": 0.0908695175225957,
+   "transfer": 0.7596153846153846,
+   "slope": 0.6122913833875059,
+   "shrink": 0.8981483148048757,
+   "abs": 0.37301187950620396,
+   "own": 0.8552094828828042
+  },
+  "cut_closed": {
+   "acc": 0.4875,
+   "mse": 0.3350887274261716,
+   "transfer": 0.5192307692307692,
+   "slope": 0.00044058878958266363,
+   "shrink": 1.0042570701996931,
+   "abs": 0.01799655978684138
+  },
+  "plastic": {
+   "acc": 0.8049999999999999,
+   "mse": 0.2441827072703162,
+   "transfer": 0.07417582417582418,
+   "slope": 0.6726604995422465,
+   "shrink": 1.2853259520158233,
+   "abs": 0.5230354761645409
+  },
+  "scalar": {
+   "acc": 0.885,
+   "mse": 0.04889321916278466,
+   "transfer": 0.6547619047619048,
+   "slope": 0.8389084840218639,
+   "shrink": 0.8802616199714515,
+   "abs": 0.4900605111802483,
+   "own": 0.8080630325212368
+  },
+  "bayes": {
+   "acc": 0.93125,
+   "mse": 0.0,
+   "transfer": 0.7692307692307692,
+   "slope": 1.0,
+   "shrink": 0.7426621698223392,
+   "abs": 0.5574780474247681
+  },
+  "twoform_mse_below_regen": 4,
+  "twoform_own_above_regen": 4,
+  "scalar_mse_below_twoform": 6,
+  "cut_fixed_link_mean": 0.7503889500107723
+ },
+ "all_rules_pass": true
+}
